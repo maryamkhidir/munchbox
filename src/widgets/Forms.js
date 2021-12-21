@@ -19,11 +19,7 @@ export const StickyForm = (props) => {
         message: '',
     })
     function cartSubmitHandler(e) {
-        e.preventDefault();
-        // const client = twilio();
-        const client = require('twilio')();
-        const a = process.env.USER_ID
-        console.log(a)
+        
     }
     useEffect(() => {
         settotalPrice(0)
