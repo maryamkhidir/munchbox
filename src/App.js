@@ -1,0 +1,167 @@
+import { useContext, useState } from "react";
+import { CartContext } from "./app/cart";
+import { MainHeader, StickyHeader } from "./components/Headers";
+import locationImg from './assets/images/location.svg';
+import mailImg from './assets/images/mail.svg';
+import callImg from './assets/images/call.svg';
+import starImg from './assets/images/star.svg';
+import { SvgIcon } from "./widgets/Icon";
+import { ProductItem } from "./widgets/Items";
+import { StickyForm } from "./widgets/Forms";
+import { products } from "./app/api";
+
+
+function App() {
+  const [mobileCartActive, setmobileCartActive] = useState(false)
+  function mobileCartToggle() {
+    const m = document.querySelector('.mobile-cart')
+    if (m.classList.contains('active')) {
+      m.classList.remove('active')
+    } else {
+      m.classList.add('active')
+    }
+  }
+  return (
+    <div className="App">
+      {/* Header */}
+      <MainHeader />
+      {/* Header End */}
+      <section className="hero-order">
+        <div className="container">
+          <div className="col-1">
+            <hr />
+            <h1>Munchbox</h1>
+            <h5>Food order wizard with online payment</h5>
+            <div className="contact-info">
+              <a href="/#"><SvgIcon
+                color='#ED3338'
+                hoverColor='#ED3338'
+                width='14px'
+                height='14px'
+                image={locationImg}
+                onClick={() => alert('clicked')}
+              /> 1234 Street Name, City Name, USA
+              </a>
+              <a href="/#"><SvgIcon
+                color='#ED3338'
+                hoverColor='#ED3338'
+                width='14px'
+                height='14px'
+                image={callImg}
+                onClick={() => alert('clicked')}
+              /> +3630123456789
+              </a>
+              <a href="/#"><SvgIcon
+                color='#ED3338'
+                hoverColor='#ED3338'
+                width='14px'
+                height='14px'
+                image={mailImg}
+                onClick={() => alert('clicked')}
+              /> info@yourdomain.com
+              </a>
+            </div>
+          </div>
+          <div className="col-2">
+            <div className="score">
+              <div className="col-1">
+                <h5>Excellent <br /><span>Based on 255 reviews</span></h5>
+              </div>
+              <div className="col-2">
+                <SvgIcon
+                  color='white'
+                  hoverColor='white'
+                  width='15px'
+                  height='15px'
+                  image={starImg}
+                  onClick={() => alert('clicked')}
+                />
+                4.9</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <StickyHeader />
+      <section className="order">
+        <div className="container">
+          <div className="col-1">
+            <section id="starters" className="items-container">
+              <h2>Starters</h2>
+              <div className="items">
+                {products.starters.map((item, index) =>
+                  <ProductItem
+                    key={index}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+            <section id="main_meal" className="items-container">
+              <h2>Main Meal</h2>
+              <div className="items">
+                {products.main_meal.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+            <section id="desserts" className="items-container">
+              <h2>Desserts</h2>
+              <div className="items">
+                {products.desserts.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+          </div>
+          <div className="col-2">
+            <StickyForm />
+          </div>
+        </div>
+      </section>
+      <footer className="main-footer">
+        <div className="container">
+          <div className="col-1 links">
+            <div className="links-container">
+              <header>Contacts</header>
+              <a href="/#">Address: 1234 Street Name, City Name, USA</a>
+              <a href="/#">Mail: info@yourdomain.com</a>
+              <a href="/#">Phone: +3630123456789</a>
+            </div>
+            <div className="links-container">
+              <header>Find Us On</header>
+
+            </div>
+          </div>
+          <div className="col-2">
+            <button>Terms and conditions</button>
+            <button>© 2021 FoodBoard</button>
+          </div>
+        </div>
+      </footer>
+      <div className="mobile-cart">
+        <StickyForm  onClick={() => mobileCartToggle()} />
+      </div>
+    </div>
+  );
+}
+
+export default App;
