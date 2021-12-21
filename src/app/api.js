@@ -19,7 +19,7 @@ export const products = {
         {
             id: 2,
             name: 'asun',
-            label: 'with sause',
+            label: 'with sauce',
             price: 1500,
             image: bg2,
         },
@@ -49,7 +49,7 @@ export const products = {
         {
             id: 6,
             name: 'asun',
-            label: 'with sause',
+            label: 'with sauce',
             price: 1500,
             image: bg2,
         },
@@ -79,7 +79,7 @@ export const products = {
         {
             id: 10,
             name: 'asun',
-            label: 'with sause',
+            label: 'with sauce',
             price: 1500,
             image: bg2,
         },

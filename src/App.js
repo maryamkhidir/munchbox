@@ -31,7 +31,7 @@ function App() {
           <div className="col-1">
             <hr />
             <h1>Munchbox</h1>
-            <h5>Food order wizard with online payment</h5>
+            <h5>Your munch box for great food delicacies and fast deliveries</h5>
             <div className="contact-info">
               <a href="/#"><SvgIcon
                 color='#ED3338'
@@ -40,7 +40,7 @@ function App() {
                 height='14px'
                 image={locationImg}
                 onClick={() => alert('clicked')}
-              /> 1234 Street Name, City Name, USA
+              /> Ilero Estate, Tipper Garage, Off Akala Exp. Ib
               </a>
               <a href="/#"><SvgIcon
                 color='#ED3338'
@@ -49,23 +49,23 @@ function App() {
                 height='14px'
                 image={callImg}
                 onClick={() => alert('clicked')}
-              /> +3630123456789
+              /> +2348165260450
               </a>
-              <a href="/#"><SvgIcon
+              <a href="/#" style={{textTransform:'lowercase'}}><SvgIcon
                 color='#ED3338'
                 hoverColor='#ED3338'
                 width='14px'
                 height='14px'
                 image={mailImg}
                 onClick={() => alert('clicked')}
-              /> info@yourdomain.com
+              /> munchboxnaija@gmail.com
               </a>
             </div>
           </div>
           <div className="col-2">
             <div className="score">
               <div className="col-1">
-                <h5>Excellent <br /><span>Based on 255 reviews</span></h5>
+                <h5>Excellent <br /><span>Based on 305 reviews</span></h5>
               </div>
               <div className="col-2">
                 <SvgIcon
@@ -142,9 +142,9 @@ function App() {
           <div className="col-1 links">
             <div className="links-container">
               <header>Contacts</header>
-              <a href="/#">Address: 1234 Street Name, City Name, USA</a>
-              <a href="/#">Mail: info@yourdomain.com</a>
-              <a href="/#">Phone: +3630123456789</a>
+              <a href="/#">Address: Opp. Central Mosque, Zone D, Ilero Estate Tipper Garage, Off Akala Express, Ibadan</a>
+              <a href="/#">E-Mail: munchboxnaija@gmail.com</a>
+              <a href="/#">Phone: +2348165260450</a>
             </div>
             <div className="links-container">
               <header>Find Us On</header>
@@ -153,7 +153,7 @@ function App() {
           </div>
           <div className="col-2">
             <button>Terms and conditions</button>
-            <button>© 2021 FoodBoard</button>
+            <button>© 2021 Munchbox</button>
           </div>
         </div>
       </footer>

@@ -227,6 +227,7 @@ button.starters:hover, button.main_meal:hover, button.desserts:hover {
 }
 .cart-item {
   border-bottom: 1px solid #ddd;
+  text-transform: capitalize;
 }
 .cart-item>.image {
   background-color: red;
