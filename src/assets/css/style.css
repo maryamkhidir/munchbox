@@ -344,6 +344,6 @@ button.starters:hover, button.main_meal:hover, button.desserts:hover {
 
   @media screen and (max-width: 330px) {
     .sticky-header button {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
