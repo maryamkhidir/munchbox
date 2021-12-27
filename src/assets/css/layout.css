@@ -387,6 +387,9 @@ html::-webkit-scrollbar {
     .mobile-cart.active .orderForm>article {
         max-height: 400px;
     }
+    .sticky-header button {
+        margin-right: 7px;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -394,9 +397,6 @@ html::-webkit-scrollbar {
         height: 450px;
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .sticky-header button {
-        margin-right: 7px;
     }
 }
 
