@@ -395,6 +395,9 @@ html::-webkit-scrollbar {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .sticky-header button {
+        margin-right: 7px;
+    }
 }
 
 @media screen and (max-width: 330px) {
@@ -402,6 +405,6 @@ html::-webkit-scrollbar {
         height: 380px;
     }
     .sticky-header button {
-        margin-right: 5px;
+        margin-right: 7px;
     }
 }

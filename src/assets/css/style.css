@@ -338,12 +338,12 @@ button.starters:hover, button.main_meal:hover, button.desserts:hover {
         font-size: 15px;
     }
     .sticky-header button {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
   @media screen and (max-width: 330px) {
     .sticky-header button {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
