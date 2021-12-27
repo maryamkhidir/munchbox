@@ -46,10 +46,14 @@ export const cartSlice = createSlice({
                 state[j].count += 1
                 return state
             } else { return state }
+        },
+        reset: (state) => {
+            state = []
+            return state
         }
     }
 })
 
 export const cartItems = state => state.cart
-export const { addToCart, addToCartCount, removeFromCartCount, removeFromCart } = cartSlice.actions
+export const { addToCart, addToCartCount, removeFromCartCount, removeFromCart, reset } = cartSlice.actions
 export default cartSlice.reducer

@@ -37,6 +37,16 @@ h6 {
   font-weight: 500;
 }
 
+.loader {
+  background-color: #f8f8f8;
+}
+.loader-icon {
+  border-top: 2px dotted var(--primary-color);
+  border-right: 2px dotted var(--primary-color);
+  border-radius: 50%;
+  animation: loading 1s infinite linear;
+}
+
 .hoverable-icon {
   mask-position: center center;
   mask-repeat: no-repeat;
@@ -225,12 +235,18 @@ button.starters:hover, button.main_meal:hover, button.desserts:hover {
   font-size: 16px;
   border-radius: 5px;
 }
+.loading {
+  border-radius: 50%;
+  border: 2px dotted white;
+  border-right: 0;
+  border-bottom: 0;
+}
 .cart-item {
   border-bottom: 1px solid #ddd;
   text-transform: capitalize;
 }
 .cart-item>.image {
-  background-color: red;
+  background-color: var(--secondary-color);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

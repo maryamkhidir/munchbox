@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import logoImg from '../assets/images/logo.png';
 import cartImg from '../assets/images/cart.svg';
-import { SvgIcon } from "../widgets/Icon";
+import { SvgIcon } from "./Icon";
 import { useSelector, useDispatch } from 'react-redux';
 import { cartItems } from '../app/cart';
 
