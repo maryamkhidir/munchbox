@@ -388,7 +388,7 @@ html::-webkit-scrollbar {
         max-height: 400px;
     }
     .sticky-header button {
-        margin-right: 7px;
+        margin-right: 10px;
     }
 }
 
@@ -403,8 +403,5 @@ html::-webkit-scrollbar {
 @media screen and (max-width: 330px) {
     .hero-order {
         height: 380px;
-    }
-    .sticky-header button {
-        margin-right: 7px;
     }
 }
