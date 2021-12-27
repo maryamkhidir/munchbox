@@ -1,17 +1,18 @@
-import { useContext, useState } from "react";
+import { useEffect, useState } from "react";
 import { CartContext } from "./app/cart";
 import { MainHeader, StickyHeader } from "./components/Headers";
 import locationImg from './assets/images/location.svg';
 import mailImg from './assets/images/mail.svg';
 import callImg from './assets/images/call.svg';
 import starImg from './assets/images/star.svg';
-import { SvgIcon } from "./widgets/Icon";
-import { ProductItem } from "./widgets/Items";
-import { StickyForm } from "./widgets/Forms";
+import { SvgIcon } from "./components/Icon";
+import { ProductItem } from "./components/Items";
+import { StickyForm } from "./components/Forms";
 import { products } from "./app/api";
 
 
 function App() {
+  const [pageLoading, setPageLoading] = useState(true)
   const [mobileCartActive, setmobileCartActive] = useState(false)
   function mobileCartToggle() {
     const m = document.querySelector('.mobile-cart')
@@ -22,7 +23,10 @@ function App() {
     }
   }
   return (
-    <div className="App">
+    <div className="App" onLoad={() => setPageLoading(false)}>
+      { pageLoading? <div className='loader'>
+        <div className="loader-icon"></div>
+      </div>: null }
       {/* Header */}
       <MainHeader />
       {/* Header End */}
@@ -142,9 +146,9 @@ function App() {
           <div className="col-1 links">
             <div className="links-container">
               <header>Contacts</header>
-              <a href="/#">Address: Opp. Central Mosque, Zone D, Ilero Estate Tipper Garage, Off Akala Express, Ibadan</a>
-              <a href="/#">E-Mail: munchboxnaija@gmail.com</a>
-              <a href="/#">Phone: +2348165260450</a>
+              <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/tAqaUvwv2CDtstEKA">Address: Opp. Central Mosque, Zone D, Ilero Estate Tipper Garage, Off Akala Express, Ibadan</a>
+              <a href="mailto:munchboxnaija@gmail.com">E-Mail: munchboxnaija@gmail.com</a>
+              <a href="tel:+2348165260450">Phone: +2348165260450</a>
             </div>
             <div className="links-container">
               <header>Find Us On</header>
