@@ -37,7 +37,7 @@ function App() {
             <h1>Munchbox</h1>
             <h5>Your munch box for great food delicacies and fast deliveries</h5>
             <div className="contact-info">
-              <a href="/#"><SvgIcon
+              <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/tAqaUvwv2CDtstEKA"><SvgIcon
                 color='#ED3338'
                 hoverColor='#ED3338'
                 width='14px'
@@ -46,7 +46,7 @@ function App() {
                 onClick={() => alert('clicked')}
               /> Ilero Estate, Tipper Garage, Off Akala Exp. Ib
               </a>
-              <a href="/#"><SvgIcon
+              <a href="tel:+2348165260450"><SvgIcon
                 color='#ED3338'
                 hoverColor='#ED3338'
                 width='14px'
@@ -55,7 +55,7 @@ function App() {
                 onClick={() => alert('clicked')}
               /> +2348165260450
               </a>
-              <a href="/#" style={{textTransform:'lowercase'}}><SvgIcon
+              <a href="mailto:munchboxnaija@gmail.com" style={{textTransform:'lowercase'}}><SvgIcon
                 color='#ED3338'
                 hoverColor='#ED3338'
                 width='14px'
