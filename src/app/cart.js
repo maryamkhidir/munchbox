@@ -10,7 +10,9 @@ export const cartSlice = createSlice({
     reducers: {
         addToCart: (state, action) => {
             const id = action.payload
-            const productsList = [...products.starters, ...products.main_meal, ...products.desserts]
+            const productsList = [...products.combos, ...products.main_meal]
+            // let productsList = []
+            // products.map(product => productsList += [...product])
             const p = productsList.find((e) => e.id === id);
             if (p != null) {
                 return [...state, {

@@ -69,15 +69,12 @@ export const StickyHeader = (props) => {
   }, [])
   useEffect(() => {
     const w = window.addEventListener('scroll', () => {
-      const startersPos = document.getElementById('starters').getBoundingClientRect().top
       const mainMealPos = document.getElementById('main_meal').getBoundingClientRect().top
-      const dessertsPos = document.getElementById('desserts').getBoundingClientRect().top
-      if (dessertsPos < 1) {
-        setscrollSelect('desserts')
+      const combosPos = document.getElementById('combos').getBoundingClientRect().top
+      if (combosPos < 1) {
+        setscrollSelect('combos')
       } else if (mainMealPos < 1) {
         setscrollSelect('main_meal')
-      } else if (startersPos < 1) {
-        setscrollSelect('starters')
       } else {
         setscrollSelect(null)
       }
@@ -97,17 +94,15 @@ export const StickyHeader = (props) => {
     <>
       <section id='sticky-header' className='sticky-header'>
         <div className='container'>
-          <button onClick={() => scrollTo('starters')}>Starters</button>
           <button onClick={() => scrollTo('main_meal')}>Main Meals</button>
-          <button onClick={() => scrollTo('desserts')}>Desserts</button>
+          <button onClick={() => scrollTo('combos')}>Combos</button>
         </div>
       </section>
       {isSticky ?
         <section id='sticky-header' className='sticky-header sticky'>
           <div className='container'>
-            <button className={scrollSelect === 'starters' ? `${scrollSelect}` : null} onClick={() => scrollTo('starters')}>Starters</button>
             <button className={scrollSelect === 'main_meal' ? `${scrollSelect}` : null} onClick={() => scrollTo('main_meal')}>Main Meals</button>
-            <button className={scrollSelect === 'desserts' ? `${scrollSelect}` : null} onClick={() => scrollTo('desserts')}>Desserts</button>
+            <button className={scrollSelect === 'combos' ? `${scrollSelect}` : null} onClick={() => scrollTo('combos')}>Combos</button>
           </div>
         </section>
         : null}

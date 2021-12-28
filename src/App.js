@@ -90,21 +90,6 @@ function App() {
       <section className="order">
         <div className="container">
           <div className="col-1">
-            <section id="starters" className="items-container">
-              <h2>Starters</h2>
-              <div className="items">
-                {products.starters.map((item, index) =>
-                  <ProductItem
-                    key={index}
-                    id={item.id}
-                    name={item.name}
-                    label={item.label}
-                    price={item.price}
-                    image={item.image}
-                  />
-                )}
-              </div>
-            </section>
             <section id="main_meal" className="items-container">
               <h2>Main Meal</h2>
               <div className="items">
@@ -120,10 +105,10 @@ function App() {
                 )}
               </div>
             </section>
-            <section id="desserts" className="items-container">
-              <h2>Desserts</h2>
+            <section id="combos" className="items-container">
+              <h2>Combos</h2>
               <div className="items">
-                {products.desserts.map((item) =>
+                {products.combos.map((item) =>
                   <ProductItem
                     key={item.id}
                     id={item.id}
@@ -135,6 +120,7 @@ function App() {
                 )}
               </div>
             </section>
+            
           </div>
           <div className="col-2">
             <StickyForm />
