@@ -207,28 +207,28 @@ export const products = {
             name: 'Coca Cola',
             label: 'per bottle',
             price: 150,
-            image: bg1,
+            image: require('../assets/images/coke.png'),
         },
         {
             id: 10,
             name: 'Pepsi',
             label: 'per bottle',
             price: 150,
-            image: bg2,
+            image: require('../assets/images/pepsi.png'),
         },
         {
             id: 11,
             name: 'Chamdor Wine',
             label: 'per bottle',
             price: 2500,
-            image: bg3,
+            image: require('../assets/images/chamdor.png'),
         },
         {
             id: 12,
             name: 'Veleta Wine',
             label: 'per bottle',
             price: 2000,
-            image: bg1,
+            image: require('../assets/images/veleta.png'),
         }
     ]
 }
