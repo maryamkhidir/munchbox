@@ -356,7 +356,7 @@ html::-webkit-scrollbar {
         margin-right: 10px;
     }
     .sticky-header>.container {
-        justify-content: center;
+        justify-content: flex-start;
     }
     .sticky-header button:last-of-type {
         margin-right: 0;
@@ -397,7 +397,7 @@ html::-webkit-scrollbar {
         height: 450px;
     }
     .sticky-header>.container {
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .sticky-header button {
         margin-right: 10px;
