@@ -306,7 +306,7 @@ html::-webkit-scrollbar {
 }
 .links-container>button, .links-container>a {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 0;
 }
 .main-footer .col-2 {
@@ -356,7 +356,7 @@ html::-webkit-scrollbar {
         margin-right: 10px;
     }
     .sticky-header>.container {
-        justify-content: center;
+        justify-content: flex-start;
     }
     .sticky-header button:last-of-type {
         margin-right: 0;
@@ -397,7 +397,7 @@ html::-webkit-scrollbar {
         height: 450px;
     }
     .sticky-header>.container {
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .sticky-header button {
         margin-right: 10px;
