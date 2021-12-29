@@ -90,10 +90,70 @@ function App() {
       <section className="order">
         <div className="container">
           <div className="col-1">
-            <section id="main_meal" className="items-container">
-              <h2>Main Meal</h2>
+            <section id="meals" className="items-container">
+              <h2>Meals</h2>
               <div className="items">
-                {products.main_meal.map((item) =>
+                {products.meals.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+            <section id="swallows" className="items-container">
+              <h2>Swallows</h2>
+              <div className="items">
+                {products.swallows.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+            <section id="protein" className="items-container">
+              <h2>Proteins</h2>
+              <div className="items">
+                {products.protein.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+            <section id="soups" className="items-container">
+              <h2>Soups</h2>
+              <div className="items">
+                {products.soups.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+            <section id="grills" className="items-container">
+              <h2>Grills & Barbecue</h2>
+              <div className="items">
+                {products.grills.map((item) =>
                   <ProductItem
                     key={item.id}
                     id={item.id}
@@ -109,6 +169,21 @@ function App() {
               <h2>Combos</h2>
               <div className="items">
                 {products.combos.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
+            <section id="drinks" className="items-container">
+              <h2>Drinks</h2>
+              <div className="items">
+                {products.drinks.map((item) =>
                   <ProductItem
                     key={item.id}
                     id={item.id}

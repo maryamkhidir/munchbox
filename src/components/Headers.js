@@ -68,13 +68,31 @@ export const StickyHeader = (props) => {
     }
   }, [])
   useEffect(() => {
+    console.log("hello")
     const w = window.addEventListener('scroll', () => {
-      const mainMealPos = document.getElementById('main_meal').getBoundingClientRect().top
+      const mealsPos = document.getElementById('meals').getBoundingClientRect().top
+      const grillsPos = document.getElementById('grills').getBoundingClientRect().top
+      const swallowsPos = document.getElementById('swallows').getBoundingClientRect().top
       const combosPos = document.getElementById('combos').getBoundingClientRect().top
-      if (combosPos < 1) {
+      const soupsPos = document.getElementById('soups').getBoundingClientRect().top
+      const proteinPos = document.getElementById('protein').getBoundingClientRect().top
+      const drinksPos = document.getElementById('drinks').getBoundingClientRect().top
+
+      if (drinksPos < 1) {
+        setscrollSelect('drinks')
+      } else if (combosPos < 1) {
         setscrollSelect('combos')
-      } else if (mainMealPos < 1) {
-        setscrollSelect('main_meal')
+      } else if (grillsPos < 1) {
+        console.log("on mmee")
+        setscrollSelect('grills')
+      } else if (soupsPos < 1) {
+        setscrollSelect('soups')
+      } else if (proteinPos < 1) {
+        setscrollSelect('protein')
+      } else if (swallowsPos < 1) {
+        setscrollSelect('swallows')
+      } else if (mealsPos < 1) {
+        setscrollSelect('meals')
       } else {
         setscrollSelect(null)
       }
@@ -94,15 +112,25 @@ export const StickyHeader = (props) => {
     <>
       <section id='sticky-header' className='sticky-header'>
         <div className='container'>
-          <button onClick={() => scrollTo('main_meal')}>Main Meals</button>
+          <button onClick={() => scrollTo('meals')}>Meals</button>
+          <button onClick={() => scrollTo('swallows')}>Swallows</button>
+          <button onClick={() => scrollTo('protein')}>Proteins</button>
+          <button onClick={() => scrollTo('soups')}>Soups</button>
+          <button onClick={() => scrollTo('grills')}>Grills & Barbecue</button>
           <button onClick={() => scrollTo('combos')}>Combos</button>
+          <button onClick={() => scrollTo('drinks')}>Drinks</button>
         </div>
       </section>
       {isSticky ?
         <section id='sticky-header' className='sticky-header sticky'>
           <div className='container'>
-            <button className={scrollSelect === 'main_meal' ? `${scrollSelect}` : null} onClick={() => scrollTo('main_meal')}>Main Meals</button>
+            <button className={scrollSelect === 'meals' ? `${scrollSelect}` : null} onClick={() => scrollTo('meals')}>Meals</button>
+            <button className={scrollSelect === 'swallows' ? `${scrollSelect}` : null} onClick={() => scrollTo('swallows')}>Swallows</button>
+            <button className={scrollSelect === 'protein' ? `${scrollSelect}` : null} onClick={() => scrollTo('protein')}>Proteins</button>
+            <button className={scrollSelect === 'soups' ? `${scrollSelect}` : null} onClick={() => scrollTo('soups')}>Soups</button>
+            <button className={scrollSelect === 'grills' ? `${scrollSelect}` : null} onClick={() => scrollTo('grills')}>Grills & Barbecue</button>
             <button className={scrollSelect === 'combos' ? `${scrollSelect}` : null} onClick={() => scrollTo('combos')}>Combos</button>
+            <button className={scrollSelect === 'drinks' ? `${scrollSelect}` : null} onClick={() => scrollTo('drinks')}>Drinks</button>
           </div>
         </section>
         : null}
