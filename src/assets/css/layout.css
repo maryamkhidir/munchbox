@@ -118,6 +118,7 @@ html::-webkit-scrollbar {
     flex-flow: row nowrap;
     max-width: var(--max-width);
     margin: 0 auto;
+    overflow: scroll;
 }
 .sticky-header button {
     padding: 7px 15px;

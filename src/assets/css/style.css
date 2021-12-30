@@ -105,6 +105,7 @@ h6 {
   transition: all 200ms;
   background-color: #fff;
   outline: 0;
+  white-space: nowrap;
 }
 .sticky-header button:hover {
   color: var(--primary-color);
