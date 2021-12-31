@@ -68,7 +68,6 @@ export const StickyHeader = (props) => {
     }
   }, [])
   useEffect(() => {
-    console.log("hello")
     const w = window.addEventListener('scroll', () => {
       const mealsPos = document.getElementById('meals').getBoundingClientRect().top
       const grillsPos = document.getElementById('grills').getBoundingClientRect().top
