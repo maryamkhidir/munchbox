@@ -3,10 +3,6 @@
 // @Ahmad Khidir
 
 
-import bg1 from '../assets/images/bg.jpg';
-import bg2 from '../assets/images/bg1.jpg';
-import bg3 from '../assets/images/bg4.jpg';
-
 export const products = {
     meals: [
         {   
@@ -109,7 +105,7 @@ export const products = {
             name: 'beef',
             label: 'per piece',
             price: 300,
-            image: require('../assets/images/12.jpg'),
+            image: require('../assets/images/beef.jpeg'),
         },
         {
             id: 10,
@@ -125,6 +121,20 @@ export const products = {
             price: 500,
             image: require('../assets/images/titus.png'),
         },
+        {
+            id: 12,
+            name: 'Egg sauce',
+            label: 'per portion',
+            price: 300,
+            image: require('../assets/images/Egg-Sauce.jpeg'),
+        },
+        {
+            id: 12,
+            name: 'Boiled egg',
+            label: 'per piece',
+            price: 100,
+            image: require('../assets/images/egg.jpeg'),
+        },
     ],
     soups: [
         {
@@ -132,21 +142,42 @@ export const products = {
             name: 'egusi',
             label: 'per portion',
             price: 200,
-            image: require('../assets/images/16.jpg'),
+            image: require('../assets/images/egusi.png'),
         },
         {
             id: 6,
             name: 'efo riro',
             label: 'per portion',
             price: 200,
-            image: require('../assets/images/14.jpg'),
+            image: require('../assets/images/efo-riro.png'),
+        },
+        {
+            id: 7,
+            name: 'ewedu',
+            label: 'per portion',
+            price: 200,
+            image: require('../assets/images/ewedu.png'),
+        },
+        {
+            id: 8,
+            name: 'chicken pepper soup',
+            label: 'per plate',
+            price: 1500,
+            image: require('../assets/images/chicken-peppersoup.png'),
+        },
+        {
+            id: 9,
+            name: 'catfish pepper soup',
+            label: 'per plate',
+            price: 2000,
+            image: require('../assets/images/catfish-peppersoup.png'),
         },
         {
             id: 10,
-            name: 'pepper soup',
+            name: 'assorted pepper soup',
             label: 'per plate',
             price: 2000,
-            image: require('../assets/images/10.jpg'),
+            image: require('../assets/images/assorted-peppersoup.png'),
         },
     ],
     grills: [
@@ -181,63 +212,28 @@ export const products = {
     ],
     combos: [
         {
-            id: 13,
-            name: 'jollof rice and beef',
+            id: 15,
+            name: 'noodles and sausage with fried egg',
             label: 'per plate',
-            price: 600,
-            image: require('../assets/images/8.jpg'),
+            price: 800,
+            image: require('../assets/images/noodles-egg.png'),
         },
         {
             id: 14,
-            name: 'fried rice and beef',
+            name: 'Yam and egg sauce with plantain',
             label: 'per plate',
-            price: 600,
-            image: require('../assets/images/8.jpg'),
-        },
-        {
-            id: 15,
-            name: 'jollof rice and chicken',
-            label: 'per plate',
-            price: 900,
-            image: require('../assets/images/4.jpg'),
-        },
-        {
-            id: 16,
-            name: 'fried rice and chicken',
-            label: 'per plate',
-            price: 900,
-            image: require('../assets/images/4.jpg'),
-        },
-        {
-            id: 17,
-            name: 'amala with soup and beef',
-            label: 'per plate',
-            price: 700,
-            image: require('../assets/images/bg1.jpg'),
-        },
-        {
-            id: 18,
-            name: 'semolina with soup and beef',
-            label: 'per plate',
-            price: 700,
-            image: require('../assets/images/bg1.jpg'),
-        },
-        {
-            id: 19,
-            name: 'amala with soup and chicken',
-            label: 'per plate',
-            price: 1000,
-            image: require('../assets/images/bg1.jpg'),
-        },
-        {
-            id: 20,
-            name: 'semolina with soup and chicken',
-            label: 'per plate',
-            price: 1000,
-            image: require('../assets/images/bg1.jpg'),
+            price: 800,
+            image: require('../assets/images/yam-sauce.jpeg'),
         },
     ],
     drinks: [
+        {
+            id: 8,
+            name: 'Bottled Water',
+            label: 'per bottle',
+            price: 100,
+            image: require('../assets/images/water.png'),
+        },
         {
             id: 9,
             name: 'Coca Cola',
@@ -254,13 +250,20 @@ export const products = {
         },
         {
             id: 11,
+            name: 'Maltina',
+            label: 'per can/bottle',
+            price: 250,
+            image: require('../assets/images/malt.png'),
+        },
+        {
+            id: 12,
             name: 'Chamdor Wine',
             label: 'per bottle',
             price: 2500,
             image: require('../assets/images/chamdor.png'),
         },
         {
-            id: 12,
+            id: 13,
             name: 'Veleta Wine',
             label: 'per bottle',
             price: 2000,
