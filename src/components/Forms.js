@@ -14,7 +14,7 @@ export const StickyForm = (props) => {
     const [formField, setFormField] = useState({
         name: '',
         email: '',
-        phone: '0',
+        phone: '',
         address: '',
         message: '',
     })
