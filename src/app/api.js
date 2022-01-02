@@ -30,8 +30,15 @@ export const products = {
             id: 4,
             name: 'Noodles',
             label: 'per 70g',
-            price: 300,
+            price: 250,
             image: require('../assets/images/noodles.jpeg'),
+        },
+        {
+            id: 42,
+            name: 'White rice',
+            label: 'per portion',
+            price: 300,
+            image: require('../assets/images/rice.png'),
         },
         {
             id: 5,
@@ -54,12 +61,35 @@ export const products = {
             price: 300,
             image: require('../assets/images/yam.jpeg'),
         },
+    ],
+    sides: [
         {
             id: 8,
             name: 'plantain',
             label: 'per 4 pieces',
             price: 100,
             image: require('../assets/images/13.png'),
+        },
+        {
+            id: 39,
+            name: 'moin-moin',
+            label: 'per wrap',
+            price: 250,
+            image: require('../assets/images/moinmoin.jpeg'),
+        },
+        {
+            id: 40,
+            name: 'coleslaw',
+            label: 'per serving',
+            price: 200,
+            image: require('../assets/images/coleslaw.jpeg'),
+        },
+        {
+            id: 17,
+            name: 'Egg sauce',
+            label: 'per portion',
+            price: 300,
+            image: require('../assets/images/Egg-Sauce.jpeg'),
         },
     ],
     swallows: [
@@ -97,7 +127,7 @@ export const products = {
             id: 13,
             name: 'chicken',
             label: 'per piece',
-            price: 600,
+            price: 500,
             image: require('../assets/images/11.jpg'),
         },
         {
@@ -115,18 +145,18 @@ export const products = {
             image: require('../assets/images/ponmo.jpeg'),
         },
         {
+            id: 41,
+            name: 'Turkey',
+            label: 'per piece',
+            price: 800,
+            image: require('../assets/images/turkey.jpeg'),
+        },
+        {
             id: 16,
             name: 'titus fish',
             label: 'per piece',
             price: 500,
             image: require('../assets/images/titus.png'),
-        },
-        {
-            id: 17,
-            name: 'Egg sauce',
-            label: 'per portion',
-            price: 300,
-            image: require('../assets/images/Egg-Sauce.jpeg'),
         },
         {
             id: 18,

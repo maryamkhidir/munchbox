@@ -70,6 +70,7 @@ export const StickyHeader = (props) => {
   useEffect(() => {
     const w = window.addEventListener('scroll', () => {
       const mealsPos = document.getElementById('meals').getBoundingClientRect().top
+      const sidesPos = document.getElementById('sides').getBoundingClientRect().top
       const grillsPos = document.getElementById('grills').getBoundingClientRect().top
       const swallowsPos = document.getElementById('swallows').getBoundingClientRect().top
       const combosPos = document.getElementById('combos').getBoundingClientRect().top
@@ -90,6 +91,8 @@ export const StickyHeader = (props) => {
         setscrollSelect('protein')
       } else if (swallowsPos < 1) {
         setscrollSelect('swallows')
+      } else if (sidesPos < 1) {
+        setscrollSelect('sides')
       } else if (mealsPos < 1) {
         setscrollSelect('meals')
       } else {
@@ -112,6 +115,7 @@ export const StickyHeader = (props) => {
       <section id='sticky-header' className='sticky-header'>
         <div className='container'>
           <button onClick={() => scrollTo('meals')}>Meals</button>
+          <button onClick={() => scrollTo('sides')}>Sides</button>
           <button onClick={() => scrollTo('swallows')}>Swallows</button>
           <button onClick={() => scrollTo('protein')}>Proteins</button>
           <button onClick={() => scrollTo('soups')}>Soups</button>
@@ -124,6 +128,7 @@ export const StickyHeader = (props) => {
         <section id='sticky-header' className='sticky-header sticky'>
           <div className='container'>
             <button className={scrollSelect === 'meals' ? `${scrollSelect}` : null} onClick={() => scrollTo('meals')}>Meals</button>
+            <button className={scrollSelect === 'sides' ? `${scrollSelect}` : null} onClick={() => scrollTo('sides')}>Sides</button>
             <button className={scrollSelect === 'swallows' ? `${scrollSelect}` : null} onClick={() => scrollTo('swallows')}>Swallows</button>
             <button className={scrollSelect === 'protein' ? `${scrollSelect}` : null} onClick={() => scrollTo('protein')}>Proteins</button>
             <button className={scrollSelect === 'soups' ? `${scrollSelect}` : null} onClick={() => scrollTo('soups')}>Soups</button>

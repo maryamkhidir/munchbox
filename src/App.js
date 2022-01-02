@@ -105,6 +105,21 @@ function App() {
                 )}
               </div>
             </section>
+            <section id="sides" className="items-container">
+              <h2>Sides</h2>
+              <div className="items">
+                {products.sides.map((item) =>
+                  <ProductItem
+                    key={item.id}
+                    id={item.id}
+                    name={item.name}
+                    label={item.label}
+                    price={item.price}
+                    image={item.image}
+                  />
+                )}
+              </div>
+            </section>
             <section id="swallows" className="items-container">
               <h2>Swallows</h2>
               <div className="items">

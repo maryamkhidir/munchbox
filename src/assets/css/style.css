@@ -111,12 +111,12 @@ h6 {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
-button.combos, button.meals, button.grills, button.swallows, button.drinks, button.protein, button.soups {
+button.combos, button.meals, button.sides, button.grills, button.swallows, button.drinks, button.protein, button.soups {
   border-color: var(--primary-color);
   background-color: var(--primary-color);
   color: white;
 }
-button.combos:hover, button.meals:hover, button.grills:hover, button.swallows:hover, button.drinks:hover, button.protein:hover, button.soups:hover {
+button.combos:hover, button.meals:hover, button.sides:hover, button.grills:hover, button.swallows:hover, button.drinks:hover, button.protein:hover, button.soups:hover {
   background-color: white;
   border-color: var(--primary-color);
   color: var(--primary-color);
