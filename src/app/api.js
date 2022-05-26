@@ -113,14 +113,14 @@ export const products = {
             label: 'per wrap',
             price: 200,
             image: require('../assets/images/amala.jpeg'),
-        },
+        },*/
         {
-            id: 12,
+            id: 11,
             name: 'poundo',
             label: 'per wrap',
-            price: 300,
+            price: 400,
             image: require('../assets/images/poundo.jpeg'),
-        }, */
+        },
     ],
     protein: [
         {
@@ -202,13 +202,13 @@ export const products = {
             price: 1500,
             image: require('../assets/images/chicken-peppersoup.png'),
         },
-        /* {
+        {
             id: 23,
             name: 'catfish pepper soup',
             label: 'per plate',
             price: 2000,
             image: require('../assets/images/catfish-peppersoup.png'),
-        }, */
+        },
         /* {
             id: 24,
             name: 'assorted pepper soup',
@@ -261,8 +261,8 @@ export const products = {
             image: require('../assets/images/9.jpeg'),
         },
     ],
-/*     combos: [
-        {
+    combos: [
+       /*  {
             id: 31,
             name: 'noodles and sausage with fried egg',
             label: 'per plate',
@@ -275,8 +275,8 @@ export const products = {
             label: 'per plate',
             price: 800,
             image: require('../assets/images/yam-sauce.jpeg'),
-        },
-    ], */
+        },*/
+    ], 
     drinks: [
         {
             id: 33,
