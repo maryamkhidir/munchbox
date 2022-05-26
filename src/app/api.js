@@ -26,13 +26,13 @@ export const products = {
             price: 300,
             image: require('../assets/images/spaghetti.jpeg'),
         },
-        {
+        /* {
             id: 4,
             name: 'Noodles',
             label: 'per 70g',
             price: 250,
             image: require('../assets/images/noodles.jpeg'),
-        },
+        }, */
         {
             id: 42,
             name: 'White rice',
@@ -47,13 +47,13 @@ export const products = {
             price: 350,
             image: require('../assets/images/Porridge.jpeg'),
         },
-        {
+        /* {
             id: 6,
             name: 'french fries',
             label: 'per portion',
             price: 500,
             image: require('../assets/images/fries.jpeg'),
-        },
+        }, */
         {
             id: 7,
             name: 'Cooked Yam',
@@ -63,13 +63,13 @@ export const products = {
         },
     ],
     sides: [
-        {
+        /* {
             id: 8,
             name: 'plantain',
             label: 'per 4 pieces',
             price: 100,
             image: require('../assets/images/13.png'),
-        },
+        }, */
         {
             id: 39,
             name: 'moin-moin',
@@ -107,7 +107,7 @@ export const products = {
             price: 200,
             image: require('../assets/images/eba.jpeg'),
         },
-        {
+        /* {
             id: 11,
             name: 'amala',
             label: 'per wrap',
@@ -120,21 +120,28 @@ export const products = {
             label: 'per wrap',
             price: 300,
             image: require('../assets/images/poundo.jpeg'),
-        },
+        }, */
     ],
     protein: [
         {
-            id: 13,
-            name: 'chicken',
+            id: 12,
+            name: 'chicken (Small)',
             label: 'per piece',
-            price: 500,
+            price: 650,
+            image: require('../assets/images/11.jpg'),
+        },
+        {
+            id: 13,
+            name: 'chicken (Big)',
+            label: 'per piece',
+            price: 850,
             image: require('../assets/images/11.jpg'),
         },
         {
             id: 14,
             name: 'beef',
             label: 'per piece',
-            price: 300,
+            price: 500,
             image: require('../assets/images/beef.jpeg'),
         },
         {
@@ -144,14 +151,14 @@ export const products = {
             price: 300,
             image: require('../assets/images/ponmo.jpeg'),
         },
-        {
+        /* {
             id: 41,
             name: 'Turkey',
             label: 'per piece',
             price: 800,
             image: require('../assets/images/turkey.jpeg'),
-        },
-        {
+        }, */
+        /* {
             id: 16,
             name: 'titus fish',
             label: 'per piece',
@@ -164,7 +171,7 @@ export const products = {
             label: 'per piece',
             price: 100,
             image: require('../assets/images/egg.jpeg'),
-        },
+        }, */
     ],
     soups: [
         {
@@ -181,13 +188,13 @@ export const products = {
             price: 200,
             image: require('../assets/images/efo-riro.png'),
         },
-        {
+        /* {
             id: 21,
             name: 'ewedu',
             label: 'per portion',
             price: 200,
             image: require('../assets/images/ewedu.png'),
-        },
+        }, */
         {
             id: 22,
             name: 'chicken pepper soup',
@@ -195,20 +202,20 @@ export const products = {
             price: 1500,
             image: require('../assets/images/chicken-peppersoup.png'),
         },
-        {
+        /* {
             id: 23,
             name: 'catfish pepper soup',
             label: 'per plate',
             price: 2000,
             image: require('../assets/images/catfish-peppersoup.png'),
-        },
-        {
+        }, */
+        /* {
             id: 24,
             name: 'assorted pepper soup',
             label: 'per plate',
             price: 2000,
             image: require('../assets/images/assorted-peppersoup.png'),
-        },
+        }, */
     ],
     grills: [
         {
@@ -232,13 +239,13 @@ export const products = {
             price: 1500,
             image: require('../assets/images/shawarma.jpeg'),
         },
-        {
+        /* {
             id: 28,
             name: 'grilled chicken',
             label: 'per serving',
             price: 1500,
             image: require('../assets/images/barbecue_chicken.jpeg'),
-        },
+        }, */
         {
             id: 29,
             name: 'chicken & chips',
@@ -254,7 +261,7 @@ export const products = {
             image: require('../assets/images/9.jpeg'),
         },
     ],
-    combos: [
+/*     combos: [
         {
             id: 31,
             name: 'noodles and sausage with fried egg',
@@ -269,7 +276,7 @@ export const products = {
             price: 800,
             image: require('../assets/images/yam-sauce.jpeg'),
         },
-    ],
+    ], */
     drinks: [
         {
             id: 33,
@@ -299,7 +306,7 @@ export const products = {
             price: 250,
             image: require('../assets/images/malt.png'),
         },
-        {
+        /* {
             id: 37,
             name: 'Chamdor Wine',
             label: 'per bottle',
@@ -312,6 +319,6 @@ export const products = {
             label: 'per bottle',
             price: 2000,
             image: require('../assets/images/veleta.png'),
-        }
+        } */
     ]
 }
