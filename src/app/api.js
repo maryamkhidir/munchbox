@@ -280,16 +280,16 @@ export const products = {
     drinks: [
         {
             id: 33,
-            name: 'Bottled Water',
+            name: 'Eva Bottled Water',
             label: 'per bottle',
-            price: 100,
+            price: 150,
             image: require('../assets/images/water.png'),
         },
         {
             id: 34,
             name: 'Coca Cola',
             label: 'per bottle',
-            price: 150,
+            price: 200,
             image: require('../assets/images/coke.png'),
         },
         {
