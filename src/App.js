@@ -44,7 +44,7 @@ function App() {
                 height='14px'
                 image={locationImg}
                 onClick={() => alert('clicked')}
-              /> Ilero Estate, Tipper Garage, Off Akala Exp. Ib
+              /> Taoliya Petrol Station, Dalute-Kasumu, Tipper Garage, Off Akala Exp. Ib
               </a>
               <a href="tel:+2348165260450"><SvgIcon
                 color='#ED3338'
@@ -222,8 +222,9 @@ function App() {
           <div className="col-1 links">
             <div className="links-container">
               <header>Contacts</header>
-              <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/tAqaUvwv2CDtstEKA">Address: Opp. Central Mosque, Zone D, Ilero Estate Tipper Garage, Off Akala Express, Ibadan</a>
-              <a href="mailto:munchboxnaija@gmail.com">E-Mail: munchboxnaija@gmail.com</a>
+              <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/tAqaUvwv2CDtstEKA">Branch 1: Taoliya Petrol Station, Dalute-Kasumu, Tipper Garage, Off Akala Express, Ibadan</a>
+              <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/tAqaUvwv2CDtstEKA">Branch 2: Opp. Central Mosque, Zone D, Ilero Estate Tipper Garage, Off Akala Express, Ibadan</a>
+              <a href="mailto:munchboxnaija@gmail.com">E-mail: munchboxnaija@gmail.com</a>
               <a href="tel:+2348165260450">Phone: +2348165260450</a>
             </div>
             <div className="links-container">
