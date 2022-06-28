@@ -180,7 +180,7 @@ function App() {
                 )}
               </div>
             </section>
-            {/* <section id="combos" className="items-container">
+            <section id="combos" className="items-container">
               <h2>Combos</h2>
               <div className="items">
                 {products.combos.map((item) =>
@@ -194,7 +194,7 @@ function App() {
                   />
                 )}
               </div>
-            </section> */}
+            </section>
             <section id="drinks" className="items-container">
               <h2>Drinks</h2>
               <div className="items">
