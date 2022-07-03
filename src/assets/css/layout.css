@@ -246,6 +246,21 @@ html::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
 }
+
+.check-box-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 20px;
+}
+.check-box-container>input {
+    width: 20px;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+
 .loading {
     display: inline-block;
     width: 15px;

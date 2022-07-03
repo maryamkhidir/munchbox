@@ -11,12 +11,14 @@ export const StickyForm = (props) => {
     const [totalPrice, settotalPrice] = useState(0);
     const [page, setpage] = useState(1)
     const [process, setProcess] = useState(false)
+    const [showCoupon, setShowCoupon] = useState(false)
     const [formField, setFormField] = useState({
         name: '',
         email: '',
         phone: '',
         address: '',
         message: '',
+        coupon: '',
     })
 
     useEffect(() => {
@@ -75,7 +77,7 @@ export const StickyForm = (props) => {
                     {items.length === 0 ? <p>Your cart is empty</p> : null}
                     <div className='total-price'>
                         <h4>TOTAL</h4>
-                        <h4>{totalPrice}.00</h4>
+                        <h4>{totalPrice.toFixed(2)}</h4>
                     </div>
                     <button className="fbtn-1" onClick={() => items.length !== 0 ? setpage(2) : null}>Next</button>
                 </article>
@@ -86,9 +88,14 @@ export const StickyForm = (props) => {
                         <input placeholder="Email *" value={formField.email} onChange={e => setFormField(prev => ({ ...prev, email: e.target.value }))} required type='email' title="Munchbox: Valid Email is required" pattern="\w+@\w+\.\w+" />
                         <input placeholder="Delivery Address *" value={formField.address} onChange={e => setFormField(prev => ({ ...prev, address: e.target.value }))} required type='text' title="Munchbox: Valid Delivery Address is required" />
                         <input placeholder="Message" value={formField.message} onChange={e => setFormField(prev => ({ ...prev, message: e.target.value }))} />
+                        <div className="check-box-container">
+                            <input id="coupon" type="checkbox" onChange={e => setShowCoupon(prev => !prev)} />
+                            <label htmlFor="coupon">I have Coupon</label>
+                        </div>
+                        {showCoupon && <input placeholder="Coupon" value={formField.coupon} onChange={e => setFormField(prev => ({ ...prev, coupon: e.target.value }))} />}
                         <div className='total-price'>
                             <h4>TOTAL</h4>
-                            <h4>{totalPrice}.00</h4>
+                            <h4>{totalPrice.toFixed(2)}</h4>
                         </div>
                         <button className="fbtn-1" type={process ? "button" : "submit"}>Process Order {process? <span className="loading"></span> : null}</button>
                         <button className="fbtn-2" onClick={() => setpage(1)} type="button">Modify Order</button>
