@@ -95,7 +95,7 @@ export const StickyForm = (props) => {
                         <input placeholder="Delivery Address *" value={formField.address} onChange={e => setFormField(prev => ({ ...prev, address: e.target.value }))} required type='text' title="Munchbox: Valid Delivery Address is required" />
                         <input placeholder="Message" value={formField.message} onChange={e => setFormField(prev => ({ ...prev, message: e.target.value }))} />
                         <div className="check-box-container">
-                            <input id="coupon" type="checkbox" onChange={e => setShowCoupon(prev => !prev)} />
+                            <input id="coupon" type="checkbox" onChange={e => setShowCoupon(e.target.checked)} />
                             <label htmlFor="coupon">I have Coupon</label>
                         </div>
                         {showCoupon && <input placeholder="Coupon" value={formField.coupon} onChange={e => setFormField(prev => ({ ...prev, coupon: e.target.value }))} />}
