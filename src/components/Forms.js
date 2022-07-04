@@ -44,7 +44,7 @@ export const StickyForm = (props) => {
                 }
                 )
                 .then(e => {
-                    console.log(e.data.status)
+                    console.log(e.data)
                     if (e.data.status === 1) {
                         setpage(1)
                         setProcess(false)
