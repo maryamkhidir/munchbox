@@ -27,27 +27,33 @@ export const StickyForm = (props) => {
     }, [items])
 
     function cartSubmitHandler(e) {
+        const url = 'https://munchboxng.herokuapp.com/munchbox/placeorder/'
+        // const url = 'http://localhost:8000/munchbox/placeorder/'
         e.preventDefault();
         if (items.length !== 0) {
             setProcess(true)
-            axios.post('https://munchboxng.herokuapp.com/munchbox/placeorder/',
+            axios.post(url,
                 {
-                    data: JSON.stringify({ user_info: formField, cart: items }),
+                    data: JSON.stringify({ 
+                        user_info: {...formField, coupon: showCoupon ? formField.coupon : null},
+                        cart: items
+                     }),
                     method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Access-Control-Allow-Origin': "*" },
+                    // mode: 'no-cors',
+                    // headers: { 'Access-Control-Allow-Origin': "*" },
                 }
                 )
                 .then(e => {
                     console.log(e.data.status)
                     if (e.data.status === 1) {
-                        dispatch(reset());
                         setpage(1)
                         setProcess(false)
                         alert('Order made successfully, please check your email inbox for your receipt.')
+                        showCoupon && alert(e.data.message)
+                        dispatch(reset());
                     } else {
                         setProcess(false)
-                        alert('Order cannot be made right now, please check your internet connection.')
+                        alert('Order cannot be made right now due to an unexpected error, please try again.')
                     }
                 })
                 .catch(e => {
