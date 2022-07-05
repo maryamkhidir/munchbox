@@ -1,0 +1,143 @@
+.login-page {
+  .header {
+    padding-top: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 128px;
+      height: 128px;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #1D2432;
+      margin-top: 30px;
+      margin-bottom: 17px;
+      span {
+        color: #39C580;
+      }
+    }
+    p {
+      font-size: 12px;
+      line-height: 15px;
+      color: #767B85;
+    }
+  }
+  
+  .form {
+    padding-top: 30px;
+    .input {
+      margin-bottom: 17px;
+      border-radius: 8px;
+    }
+    .datepicker {
+      height: 34px;
+      background: transparent;
+      border: 1px solid #C9D3E6;
+      border-radius: 6px;
+      width: calc( 100% - 26px);
+      padding: 18px 12px 2px;
+      font-family: 'Helvetica';
+    }
+    .file-upload {
+      padding: 15px;
+      background: #F0F5FF;
+      border: 1px solid #C9D3E6;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      
+      img {
+        height: 27px;
+        border-radius: 5px;
+        max-width: 50px;
+        object-fit: cover;
+        object-position: center left;
+      }
+      span {
+        font-size: 12px;
+        line-height: 15px;
+        color: #979797;
+        margin-left: 20px;
+      }
+    }
+    .checkoption {
+      label {
+        margin: 0 30px 0 0px;
+      }
+    }
+    .label {
+      color: #777676;
+      font-size:16px;
+      font-family: 'Helvetica';
+      span {
+        font-size: 12px;
+        font-family: 'Helvetica';
+      }
+    }
+    .terms_and_conditions, .already_account {
+      font-size: 12px;
+      line-height: 15px;
+      text-align: center;
+      color: #6A6B6C;
+      margin-bottom: 10px;
+  
+      span, div {
+        color: #39C580;
+        font-weight: 500;
+        text-decoration-line: underline;
+        font-size: 14px;
+      }
+    }
+    .forgot_password {
+      color: #39C580;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-decoration-line: underline;
+    }
+  }
+  
+  .thankyou_popup {
+    header {
+      padding:16px 26px;
+      display:flex;
+      justify-content:flex-end;
+    }
+    main {
+      padding:0 35px 0;
+      display:flex;
+      justify-content:center;
+      flex-direction:column;
+      align-items:center;
+  
+      img {
+        width:50px;
+        height:50px;
+        margin-bottom:21px;
+      }
+  
+      .title {
+        color:#6A6B6C;
+        font-size:18px;
+        font-weight:500;
+        font-family:'Montserrat';
+        letter-spacing: -0.2px;
+        margin-bottom:23px;
+        text-align:center;
+      }
+      .subtitle {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        color: #767B85;
+      }
+    }
+  }
+}

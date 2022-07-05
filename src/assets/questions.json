@@ -1,0 +1,102 @@
+[
+  {
+    "tag":"required",
+    "title": "Health Check",
+    "desc": "A list of compulsory medical checks (in the forms of laboratory testing, physician report etc) required by the destination country. We will also add recommended medical checks that can be relevant in case of any emergency needs."
+  },
+  {
+    "tag":"required",
+    "title": "Quarantine",
+    "desc": "Ongoing quarantine regulations at the destination country as it relates with your travel, and how to comply with it."
+  },
+  {
+    "tag":"information",
+    "title": "Disease Outbreak",
+    "desc": "Most recent update on disease outbreaks in the destination country, how that may affect your trip and how to protect yourself against the condition"
+  },
+  {
+    "tag":"required",
+    "title": "Vaccinations",
+    "desc": "A list of compulsory vaccines required by destination country, as well as recommended protective vaccines relevant to your trip."
+  },
+  {
+    "tag":"recommend",
+    "title": "Medicines",
+    "desc": "A reminder on medications that may not be accessible at the destination country due to access to quality medicines, local regulations, availability and price."
+  },
+  {
+    "tag":"recommend",
+    "title": "Health Insurance",
+    "desc": "Travel health insurance regulation by destination country (if it is mandatory or not). As well as recommendation on travel insurance."
+  },
+  {
+    "tag":"information",
+    "title": "Pollution",
+    "desc": "Current state of pollution with focus on air quality at the destination country. This may also capture chemical and radioactive pollution where present."
+  },
+  {
+    "tag":"information",
+    "title": "Reliable Hospital",
+    "desc": "Current state of healthcare services at the destination, cost of care and preferred mode of payment for care."
+  },
+  {
+    "tag":"information",
+    "title": "Lodging Standards",
+    "desc": "State of housing safety regulation at destination"
+  },
+  {
+    "tag":"information",
+    "title": "Local Transportation",
+    "desc": "Availability of safe and accessible local transportation within the city of destination, with a list of local options"
+  },
+  {
+    "tag":"information",
+    "title": "Inter-City Transportation",
+    "desc": "Availability of safe and accessible transportation services between cities at the destination country, with a list of options"
+  },
+  {
+    "tag":"information",
+    "title": "Weather Conditions",
+    "desc": "Current state of weather at the destination country, and the projected weather condition over the period of stay at the destination country."
+  },
+  {
+    "tag":"recommend",
+    "title": "Food/Water Hygiene",
+    "desc": "Current state of food and water hygiene at the destination country, based on food safety data and consumer feedback."
+  },
+  {
+    "tag":"information",
+    "title": "Crime & Insecurity",
+    "desc": "Current level of crime and insecurity at destination country, with focus on theft, assault, rape, and other forms of interpersonal violence, at destination."
+  },
+  {
+    "tag":"required",
+    "title": "Places to careful of:",
+    "desc": "List of unsafe places within destination country due to history of crime, insecurity and other safety related problems."
+  },
+  {
+    "tag":"required",
+    "title": "Discrimination",
+    "desc": "Racial and other forms of discrimiation"
+  },
+  {
+    "tag":"information",
+    "title": "Scam and Fraud",
+    "desc": "The prevalent of local financial frauds in the destination countriee. Exchange rats, credit cards, fake documentation and extortion."
+  },
+  {
+    "tag":"information",
+    "title": "Financial Services",
+    "desc": "What card systems work, tariffs, taxes, prices"
+  },
+  {
+    "tag":"information",
+    "title": "Emergency Services",
+    "desc": "Embassy, Ambulance, Police, Fire, Private Security."
+  },
+  {
+    "tag":"information",
+    "title": "Language & Communication",
+    "desc": "Abilty to communicate in common international language."
+  }
+]

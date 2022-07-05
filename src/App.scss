@@ -1,0 +1,197 @@
+
+@import "./assets/scss/login";
+@import "./assets/scss/dashboard";
+@import "./assets/scss/landing";
+
+
+p,h1 {margin: 0}
+.MuiButton-containedPrimary:hover {
+  background-color: #39C580 !important;
+}
+
+.root {
+  text-align: center;
+  flex: 1;
+  min-height: 100vh;
+
+  .location {
+    height: 100vh;
+    display: flex;
+    background-blend-mode: normal;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+.react-datepicker-popper {
+  z-index: 2 !important;
+}
+.v-space-20 {
+  margin-top: 20px;
+}
+.v-space-30 {
+  margin-top: 30px;
+}
+.v-space-40 {
+  margin-top: 40px;
+}
+.v-space-50 {
+  margin-top: 50px;
+}
+
+nav.nav-wrapper {
+    display: none;
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 1200;
+    overflow: hidden;
+
+    &.nav-open {
+      display: block;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      img {
+        margin-left: 10px;
+      }
+      button {
+        position: absolute;
+        right: 30px;
+        top: 40px;
+        background: none;
+
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 28px;
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #1D2432;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        width: calc(100% - 60px);
+        a {
+          color: #1D2432;
+          text-decoration: none;
+          &:hover {
+            color: #39C580;
+          }
+        }
+        &.nav-button {
+          background-color: #39C580;
+          border-radius: 5px;
+          margin: 30px 0;
+          font-weight: 700;
+          max-width: 500px;
+
+          a {
+            &:hover {
+              color: white;
+            }
+          }
+
+        }
+        
+      }
+    }
+  }
+.spinner {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.response-modal {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(100, 100, 100, 0.669);
+  height: calc( 100vh );
+  width: 100%;
+  &__container {
+    background-color: #FFF;
+    width: calc( 100% - 80px );
+    padding: 15px 20px 20px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+
+    button {
+      align-self: flex-end;
+      background-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    &--title {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    &--message {
+      margin-bottom: 20px;
+      font-size: 12px;
+      line-height: 19px;
+      color: #1D2432;
+      font-style: oblique;
+      text-align: center;
+    }
+  }
+}
+
+.primary-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #DB1217;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  height: 68px;
+  margin-bottom: 7px;
+
+  @media screen and (max-width: 375px)  {
+    height: 56px;
+  }
+
+}

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'SFPro Normal';
+  src: local('SFPro Normal'), url(./assets/fonts/FontsFree-Net-SFProDisplay-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), url(./assets/fonts/HelveticaNeue.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'HelveticaBold';
+  src: local('HelveticaBold'), url(./assets/fonts/HelveticaNeue\ Medium.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica';
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.MuiFilledInput-underline:before {
+  display: none;
+}
+
+.MuiAccordion-root:before{
+  display: none;
+}
+
+.MuiInputBase-root {
+  font: 14px "Inter", sans-serif !important;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+h1, h2, h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
