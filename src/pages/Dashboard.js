@@ -7,15 +7,6 @@ import PrimaryButton from '../components/PrimaryButton';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 
-export const NoRecord = ({category}) => {
-  return(
-    <div className="record-detail" style={{display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column", paddingTop:100 }}>
-      <img src={Images.norecord} style={{width:64, height:48, marginBottom:5}} alt="no-record" />
-      <div style={{color:"#6A6B6C", fontWeight:500, fontSize:12}}>No listings yet {(category) && <> in <b style={{textTransform: "lowercase"}}>{category}</b></>} </div>
-    </div>
-  )
-}
-
 const FoodCard = ({meal}) => {
   const app = useSelector(selectApp)
   const isSelected = (app.selected.id === meal.id)
