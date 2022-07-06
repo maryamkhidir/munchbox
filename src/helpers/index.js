@@ -5,7 +5,7 @@ import { getAuth, signInAnonymously } from "firebase/auth";
 
 export const fetchLocation = async () => {
   try{
-    const fetchLocation = await fetch('http://ip-api.com/json');
+    const fetchLocation = await fetch('/api/json');
     const location = await fetchLocation.json();
     return `${location.city}, ${location.countryCode}`
   }catch(error) {
@@ -71,6 +71,7 @@ export const submitPoll = async (data) => {
     const db = getDatabase(app);
     const totalRef = ref(db, 'total')
     const total = (await get(totalRef)).val()
+    console.log(total)
     set(totalRef, total + 1 );
     
   } catch(error) {
