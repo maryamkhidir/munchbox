@@ -156,7 +156,7 @@ const DiscountCode = () => {
   return(
     <div className='discount'>
       <div className='discount-container'>
-        <p className='discount-message'>Your discount code:
+        <p className='discount-message'>Copy your discount code:
         </p>
         <div className={isCopied ? 'discount-code' : 'discount-code copied'}>MBPOLL10 
         <CopyToClipboard text={"MBPOLL10"} onCopy={() => toggleCopy(true)}>
