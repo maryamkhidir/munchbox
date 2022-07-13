@@ -24,13 +24,13 @@ const FoodCard = ({meal}) => {
         </div>
       </div>
     </div>}
-    <div className='meal-card' onClick={() => dispatch(setSelectedMeal(meal))}>
+    <button className='meal-card' onClick={() => dispatch(setSelectedMeal(meal))}>
       <div style={{backgroundImage:`url(${Images[meal.image]})`}} className='meal-card__background'/>
       <div className='meal-card__desc'>
         <h3>{meal.title}</h3>
         <p>{meal.desc}</p>
       </div>
-    </div>
+    </button>
   </>
   )
 }
