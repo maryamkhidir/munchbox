@@ -62,7 +62,7 @@ export const submitPoll = async (data) => {
       const uuid = newQuestion.key
       updates[uuid] = {...data, id:uuid, count: 1}
 
-      set(pollsRef, updates );
+      set(pollsRef, updates);
     }
   }
   try{
@@ -71,8 +71,9 @@ export const submitPoll = async (data) => {
     const db = getDatabase(app);
     const totalRef = ref(db, 'total')
     const total = (await get(totalRef)).val()
-    console.log(total)
-    set(totalRef, total + 1 );
+    const newTotal = parseInt(total) + 1
+    
+    set(totalRef, newTotal);
     
   } catch(error) {
     console.log(error)
