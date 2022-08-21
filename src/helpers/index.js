@@ -5,12 +5,12 @@ import { getAuth, signInAnonymously } from "firebase/auth";
 
 export const fetchLocation = async () => {
   try{
-    const fetchLocation = await fetch('/api/json');
-    const location = await fetchLocation.json();
+    const fetchLoc = await fetch('/api/json');
+    const location = await fetchLoc;
     return `${location.city}, ${location.countryCode}`
   }catch(error) {
     console.log(error)
-    return
+    return ""
   }
 }
 
